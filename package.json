@@ -1,0 +1,42 @@
+{
+  "name": "learn-ts-prisma",
+  "version": "1.0.0",
+  "description": "This is a project to learn ts and prisma orm",
+  "main": "server.ts",
+  "type": "module",
+  "scripts": {
+     "dev": "nodemon --exec \"ts-node-esm\" ./server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "migrate:dev": "pnpx prisma migrate dev",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie": "^1.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "logger": "^0.0.1",
+    "morgan": "^1.10.1",
+    "prisma": "^6.19.0",
+    "winston": "^3.18.3",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "dotenv": "^17.2.3",
+    "nodemon": "^3.1.11",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
